@@ -1,6 +1,6 @@
 # GTNH 贡献者行为准则
 
-🌐 **语言：** [English](CODE_OF_CONDUCT.md) | [Українська](CODE_OF_CONDUCT_uk.md) | [Русский](CODE_OF_CONDUCT_ru.md) | [简体中文](CODE_OF_CONDUCT_zh.md)
+🌐 **语言：** [English](CODE_OF_CONDUCT.md) | [Українська](CODE_OF_CONDUCT_uk.md) | [Русский](CODE_OF_CONDUCT_ru.md) | [简体中文](CODE_OF_CONDUCT_zh_cn.md)
 
 本行为准则适用于任何代表 GTNH 项目或为该项目做出贡献的人员，包括在 GitHub、Discord 以及任何其他与 GTNH 相关的平台上。
 
