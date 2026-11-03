@@ -1,297 +1,297 @@
-# GTNH贡献指南
+# GTNH 贡献准则
 
-🌐 **其他语言：** [English](CONTRIBUTING.md) | [Українська](CONTRIBUTING_uk.md) | [Русский](CONTRIBUTING_ru.md) | [简体中文](CONTRIBUTING_zh_cn.md)
+🌐 **语言：** [English](CONTRIBUTING.md) | [Українська](CONTRIBUTING_uk.md) | [Русский](CONTRIBUTING_ru.md) | [简体中文](CONTRIBUTING_zh_cn.md)
 
-These guidelines explain how to contribute to GTNH, what is expected in pull requests, and how content, balance, and reviews should be handled.
+本准则旨在说明如何为 GTNH 做出贡献、pull request（PR）应满足哪些要求，以及应当如何处理游戏内容、平衡性与代码审查。
 
-Before contributing, please read and follow the project [Code of Conduct](https://github.com/GTNewHorizons/.github/blob/main/CODE_OF_CONDUCT.md) and [AI Usage Policy](https://github.com/GTNewHorizons/GTNH-Dev-Doc/blob/master/AI_POLICY.md). The AI policy applies to code, written content, issues, discussions, pull requests, and media.
+在参与贡献之前，请先阅读并遵守本项目的[行为准则](https://github.com/GTNewHorizons/.github/blob/main/CODE_OF_CONDUCT_zh_cn.md)与[AI 使用政策](https://github.com/GTNewHorizons/GTNH-Dev-Doc/blob/master/AI_POLICY.md)。AI 使用政策适用于代码、文字内容、issue、讨论、pull request 以及各类媒体文件。
 
-## 1. General Contribution Expectations
+## 1. 基本贡献要求
 
-### Know the Area You Are Changing
+### 了解你所修改的内容
 
-- Avoid changing areas of the pack you have never personally reached as a player.
-- If you have not reached that area, get feedback from developers or players who are experienced with it.
-- This is especially important for balance, progression, and late-game systems.
-
----
-
-### Discuss Major New Content First
-
-- Do not open PRs with major new content unless the idea has been discussed with the team first.
-- The team should understand the intended design before implementation.
-- Avoid changes where only the PR author fully understands what is being added.
-- Significant content should not be discovered by the rest of the team only after it ships.
+- 请勿修改整合包中你作为玩家从未亲自体验过的部分。
+- 如果你尚未推进到该阶段，请先向熟悉该部分内容的开发者或玩家征求反馈意见。
+- 这一点在涉及游戏平衡性、流程进度以及后期系统时尤为重要。
 
 ---
 
-### Respect the Vision
+### 重大新增内容请先讨论
 
-- Respect the GTNH vision.
-- If an idea is not covered by the vision document:
-  - Discuss it with developers in `mod-dev`, `#meta-dev`, or `github-discussion`.
-  - If there is agreement, the vision document can be updated.
-  - Then implementation can proceed.
-
----
-
-### New Content Below IV
-
-- Avoid adding new content below IV tier.
-- The game is already dense, especially with chemical lines.
-- Bug fixes and quality-of-life changes are always appreciated.
-- If you have a strong reason to add new content below IV:
-  - Discuss it with developers in `mod-dev`, `#meta-dev`, or `github-discussion` first.
-  - Wait for general consensus before starting serious work.
-  - Do not spend major development time on something likely to be rejected.
+- 除非相关构想已经提前与团队讨论过，否则请勿直接提交包含重大新增内容的 PR。
+- 在动手实现之前，团队应当先了解其预期的设计方案。
+- 避免出现“只有 PR 作者自己完全明白新增了什么”的改动。
+- 重大内容不应等到已经实装上线后，才被团队其他成员知晓。
 
 ---
 
-### Be Open to Criticism
+### 尊重项目愿景（Vision）
 
-- Feedback, revision, and rejection are normal parts of development.
-- Content you are proud of may not be accepted in its current form.
-- Criticism of a change is not criticism of the person who made it.
-
----
-
-## 2. Pull Request Requirements
-
-### PR Descriptions
-
-Pull requests that add features, change features, or affect balance should clearly explain:
-
-- What the PR changes.
-- Why the change is being made.
-- What area of the pack it affects.
-- Any context reviewers need to understand the change.
-- Any Discord discussion or prior agreement relevant to the PR.
-
-The more precise the description, the easier the PR is to review.
+- 请尊重 GTNH 的整体设计愿景。
+- 如果某项构想尚未包含在愿景文档中：
+  - 请先在 Discord 的 `mod-dev`、`#meta-dev` 或 `github-discussion` 频道中与开发者讨论。
+  - 若达成共识，可以先更新愿景文档。
+  - 随后再推进具体的代码实现。
 
 ---
 
-### PR Titles and Changelog Context
+### IV 阶段以下的新内容
 
-- PR titles should be written as if they may appear in a changelog.
-- Context is important because changelog entries may be generated from PR titles.
-
----
-
-### Screenshots, Videos, and Examples
-
-- Screenshots and videos are strongly encouraged when they help explain the change.
-- Screenshots and videos may also be useful for changelogs or `#upcoming-features`.
+- 尽量避免在 IV 阶段以下添加新内容。
+- 游戏前期的内容（尤其是各类化工产线）已经非常密集。
+- 但我们始终欢迎 bug 修复与游戏体验优化（QoL）的改动。
+- 如果你确实有充分的理由需要在 IV 阶段以下添加新内容：
+  - 请先在 `mod-dev`、`#meta-dev` 或 `github-discussion` 频道中与开发者讨论。
+  - 待大家达成广泛共识后，再开始正式开发。
+  - 请勿在极有可能被驳回的内容上耗费大量开发精力。
 
 ---
 
-### Commits
+### 虚心接受批评
 
-- Prefer multiple clear, focused commits over one large commit.
-- Commit names should reflect the changes they contain.
-
----
-
-### PR Template Requirement
-
-- The PR template must be properly filled out.
-- If there are any details that need to be included such as other PRs required for merge or to what degree AI was used in the PR please mention it under the respective bullet point.
+- 收到反馈、进行修改乃至被驳回，都是开发过程中的正常现象。
+- 即使是你引以为傲的开发成果，也未必能直接以当前形式被采纳。
+- 对某项改动本身的批评，并不等于对作者本人的否定。
 
 ---
 
-### Recipe Chains Require Flowcharts
+## 2. Pull Request（拉取请求）规范
 
-- Any PR that adds a new recipe chain must include a flowchart.
-- Recipe-chain PRs without a flowchart may be rejected regardless of quality.
-- If you do not know how to make one, try [draw.io](https://draw.io).
+### PR 描述
 
----
+凡是新增特性、改动特性或影响平衡性的 pull request，都应当清晰说明以下内容：
 
-## 3. Special Rules for Balance Changes
+- 该 PR 具体修改了什么。
+- 为什么要进行这项改动。
+- 它会影响整合包的哪个部分。
+- 有助于审查者（Reviewer）理解该改动的背景信息。
+- 与该 PR 相关的 Discord 讨论记录或事先达成的共识。
 
-Balance-affecting PRs must follow the GTNH vision.
-
-### Label Requirement
-
-- Use the `Affects Balance` label when appropriate.
-- Do not mix balance changes with unrelated changes in the same PR.
+描述越准确详实，PR 就越容易通过审查。
 
 ---
 
-### Approval Requirement
+### PR 标题与更新日志（Changelog）语境
 
-- At least two approvals are required.
-- One approval must be from a member of the Balance Review GitHub team.
-
----
-
-### Required Balance PR Questions
-
-When a PR is tagged as balance-affecting, the author must answer the following questions:
-
-1. What goal is this change trying to achieve? What tier is it targeting?
-2. What side effects does this have on other lines or systems? How does it change the game meta?
-3. If relevant, do you have metrics, a spreadsheet, or a visualization explaining the change? If it is a new multiblock, can you provide a picture and/or practical setup?
-4. Is this change being made in expectation of, or in tandem with, another unwritten or unmerged change coming later?
-
-Notes:
-
-- These questions help clarify the author’s reasoning.
-- They make discussion easier.
-- They preserve context that may otherwise be lost in Discord.
-- Authors do not need perfect answers to every question, but an attempt should be made.
-- A balance PR that does not answer these questions may be rejected regardless of quality.
+- 撰写 PR 标题时，应当考虑到它可能会直接出现在更新日志中。
+- 标题应当提供清晰的上下文语境，因为更新日志条目可能会根据 PR 标题自动生成。
 
 ---
 
-## 4. Content and Design Standards
+### 截图、视频与示例
 
-### General Content Expectations
-
-When adding or changing pack content:
-
-- Respect the identity of the mod or system being changed.
-- Consider how the change affects progression, balance, lore, and player experience.
-- Avoid forcing consistency where inconsistency is intentional or part of the design identity.
-- Ask for feedback when unsure.
+- 如果截图或视频有助于说明改动内容，强烈建议一并附上。
+- 这些截图和视频同样可用于更新日志或 Discord 的 `#upcoming-features` 频道中。
 
 ---
 
-### Language Standards in Pack Content and Code
+### Commits（提交记录）
 
-Profanity and insults are not acceptable in the pack.
+- 相比于单个庞大的 commit，更推荐拆分为多个清晰、职责单一的 commit。
+- Commit 信息应当准确反映其所包含的具体改动。
 
-This applies to:
+---
 
-- Quest text
+### PR 模板填写要求
+
+- 必须按照要求完整填写 PR 模板。
+- 如果有需要说明的其他信息，例如合并该 PR 所依赖的其他 PR，或是在该 PR 中使用 AI 的程度，请在模板中对应的条目下予以说明。
+
+---
+
+### 产线必须附带流程图
+
+- 任何新增产线（Recipe chain）的 PR 都必须附带流程图。
+- 未附带流程图的产线 PR，无论本身质量如何，均可能被直接驳回。
+- 如果你不知道如何制作流程图，可以尝试使用 [draw.io](https://draw.io)。
+
+---
+
+## 3. 平衡性改动特别规定
+
+所有影响平衡性的 PR 都必须符合 GTNH 的项目愿景（Vision）。
+
+### 标签要求
+
+- 在适当情况下，应为 PR 添加 `Affects Balance`（影响平衡）标签。
+- 请勿在同一个 PR 中同时提交平衡性改动与其他无关的改动。
+
+---
+
+### 审批要求
+
+- 至少需要获得两位审查者的批准（Approval）。
+- 其中至少有一位必须来自 GitHub 的 `Balance Review`（平衡性审查）团队。
+
+---
+
+### 平衡性 PR 必答问题
+
+当 PR 带有“影响平衡”标签时，作者必须回答以下问题：
+
+1. 这项改动希望实现什么目标？针对的是哪个游戏阶段？
+2. 这项改动会对其他产线或系统产生什么连带影响？它会如何改变现有的游戏环境？
+3. 如果适用，是否有相关数据计算、电子表格或可视化图表，以解释这项改动？如果新增了多方块机器，能否提供相关图片和/或实际搭建示例？
+4. 这项改动是否以另一项尚未编写或合并、但计划在未来实施的改动为前提，或需要与其配合？
+
+说明：
+
+- 这些问题有助于阐明作者的设计思路。
+- 这些问题能让讨论更加高效。
+- 这些问题能够保留原本可能淹没在 Discord 聊天记录中的上下文语境。
+- 作者无需对每个问题都给出完美的答案，但至少应当认真作答。
+- 未回答上述问题的平衡性 PR，无论本身质量如何，均可能被直接驳回。
+
+---
+
+## 4. 内容与设计标准
+
+### 内容设计基本要求
+
+在新增或改动整合包内容时：
+
+- 请尊重所改动模组或系统的自身特色。
+- 充分考虑改动对游戏流程进度、平衡性、背景设定以及玩家体验的影响。
+- 如果某些不一致之处是有意保留的，或本身就是设计特色的一部分，请勿强行统一。
+- 如有疑问，应主动征求反馈意见。
+
+---
+
+### 整合包内容与代码中的语言规范
+
+整合包中不允许出现脏话与侮辱性言辞。
+
+适用范围包括：
+
+- 任务文本
 - Tooltips
-- In-game content
-- Code
-- Comments
-- Other user-facing or contributor-facing text
+- 游戏内其他内容
+- 代码
+- 注释
+- 其他面向玩家或面向贡献者的文本
 
-Rules:
+具体规则：
 
-- Do not use swearwords, even partially or fully censored.
-- If something is meant to be funny or witty, find another way to write it.
-- Do not insult the player or a group of players.
-- Light teasing may be acceptable only if you can be completely sure it will be understood as a joke.
-- If you edit existing content or code and find something that violates this standard, remove or replace it.
-- If you are unsure about a phrase, ask others for feedback.
+- 请勿使用任何脏话，即使部分屏蔽或完全打码也不允许。
+- 如果你想表达幽默或玩梗，请换一种得体的写法。
+- 请勿侮辱玩家或特定玩家群体。
+- 只有在你能够完全确定对方会将其理解为善意玩笑的情况下，才允许适度调侃。
+- 如果你在编辑现有内容或代码时，发现了违反本规范的部分，应将其删除或替换。
+- 如果你不确定某种表述是否合适，请征求他人的意见。
 
 ---
 
-### Texture and GUI Guidelines
+### 纹理与 GUI 规范
 
-#### New Textures
+#### 新增纹理
 
-- New textures should generally remain consistent with the mod or mod group they are being added to.
-- Ideally, new textures should be run past an admin before being merged.
+- 新增纹理通常应当与其所属模组或模组系列的现有风格保持一致。
+- 理想情况下，新增纹理应在合并前交由管理员审核。
 
-#### Magic Textures
+#### 魔法类纹理
 
-- Magic is meant to feel, look, and play differently from GregTech.
-- Do not update magic GUIs purely for consistency with GregTech if it damages the distinct feel of magic content.
-- Magic content should preserve its own artistic and mechanical identity.
+- 魔法模组在游戏体验、视觉表现和玩法机制上，都应当与 GregTech 有所区别。
+- 请勿仅仅为了与 GregTech 保持一致而修改魔法类 GUI，因为这样会破坏魔法类内容的独特风格。
+- 魔法类内容应当保留其自身独特的美术风格与玩法特色。
 
 #### Tooltips
 
-- Tooltip reduction is fine when needed.
-- If a mod or system has a specific tooltip style or consistency, try to preserve it.
+- 如有必要，可以适当精简 tooltip 文本。
+- 如果某个模组或系统具有特定的 tooltip 排版风格或一致性规范，应尽量予以保留。
 
-#### Inventory Color Changes
+#### 物品栏颜色调整
 
-GUIs that shift the color of the player’s inventory are allowed if the usage is consistent.
+GUI 可以改变玩家物品栏的颜色，前提是颜色的使用方式保持一致。
 
-Examples include:
+现有示例如下：
 
-- GT Steam Machines
-- Magic Bees’ Magic Apiary
-- Railcraft’s Coke Oven
-
----
-
-### Magic Design Guidelines
-
-Magic in GTNH is intended to have a strong and distinct look, feel, and execution compared to the technology-focused parts of the pack.
-
-When designing or balancing magic content:
-
-- Respect the artistic identity of each magic mod.
-- Respect the mechanical identity of each magic mod.
-- Consider lore, theme, and progression.
-- Avoid forcing magic content to behave like tech content unless there is a strong design reason.
+- GT 蒸汽机器
+- Magic Bees 模组的魔法蜂箱
+- Railcraft 模组的焦炉
 
 ---
 
-## 5. Reviewing Pull Requests
+### 魔法类内容设计准则
 
-These are general review guidelines. They do not need to be followed mechanically in every case, but they describe the expected review approach.
+在 GTNH 中，魔法类内容旨在呈现与科技类内容截然不同的视觉表现、游戏体验与玩法机制。
 
-### Review Within Your Knowledge
+在设计或调整魔法类内容的平衡性时：
 
-- Avoid approving balance-affecting PRs if you are not familiar with the implications of the proposed changes.
-- This is especially important for balance changes, because they can negatively affect the wider community if reviewed incorrectly.
-- You may still ask questions or point out possible issues, even if you are not comfortable approving the PR.
-
----
-
-### Know Your Limits and Expand Them
-
-- Everyone has limits to what they know.
-- There is no limit to what they can learn.
-- If a PR is in an unfamiliar area:
-  - Read it.
-  - Ask questions.
-  - Identify possible issues.
-  - Point out inconsistencies or “code smells.”
-- Do not approve a PR unless you understand the change well enough to be confident in the approval.
-- As you become familiar with more systems, gradually increase the complexity of the PRs you review.
+- 尊重各个魔法模组自身的美术风格。
+- 尊重各个魔法模组自身的玩法机制。
+- 综合考虑背景设定、主题氛围与流程进度。
+- 除非有充分的设计理由，否则不应强行让魔法内容照搬科技类内容的运作模式。
 
 ---
 
-### Ask When Something Is Unclear
+## 5. 审查 Pull Request
 
-- If code or logic is only understood by the author, ask them to clarify it.
-- Clarification can happen in:
-  - A PR comment
-  - The PR description
-  - Documentation
-  - Code comments
-- This prevents knowledge gaps and helps future maintainers.
-- If a concept is difficult to explain even after discussion, the author should consider documenting it directly in the code.
+以下是通用的代码审查准则。这些准则并非所有情况下都需要机械地逐条遵循，但它们阐明了代码审查应遵循的基本方式。
 
----
+### 量力而行
 
-### Read the PR Description
-
-- The PR description gives reviewers a quick overview of the change.
-- If the description is empty or unclear, ask the author to complete it.
-- A good description helps reviewers:
-  - Understand the scope.
-  - Decide whether they are the right person to review it.
-  - Understand the intended purpose of the change.
+- 如果你并不清楚某项平衡性改动所带来的深远影响，请勿轻易批准（Approve）涉及平衡性的 PR。
+- 这一点对平衡性改动尤为重要，因为一旦审查把关不当，可能会对整个社区造成负面影响。
+- 即使没有足够把握批准某个 PR，也依然可以提出问题或指出潜在的隐患。
 
 ---
 
-### Contribute Positively
+### 认清局限，学无止境
 
-Review comments should be constructive, actionable, and respectful.
-
-Remember:
-
-- Behind every PR is a person who spent time and effort making a contribution.
-- Rude or dismissive reviews can discourage future contribution.
-- Highlight what is done well, not only what needs improvement.
-- If something is unclear, frame the concern as a genuine question rather than an implied criticism.
-- A community thrives when contributors feel valued and respected.
+- 每个人的知识面都有局限。
+- 但每个人都有无限的学习潜力。
+- 如果某个 PR 涉及你不熟悉的领域：
+  - 阅读内容。
+  - 主动提问。
+  - 排查潜在问题。
+  - 指出不一致之处或“代码异味（Code smells）”。
+- 除非你充分理解了改动内容，并有充分的把握，否则请勿批准该 PR。
+- 随着逐渐熟悉更多系统，可以逐步尝试审查更复杂的 PR。
 
 ---
 
-## 6. Developer Breaks and Hiatus
+### 敏而好问
 
-Life events may require developers to temporarily step back from GTNH.
+- 如果某段代码或逻辑只有作者本人能够理解，应当要求作者做出解释。
+- 可以在以下位置做出解释：
+  - PR 评论
+  - PR 描述
+  - 文档
+  - 代码注释
+- 这有助于避免知识断层，并为未来的维护者提供帮助。
+- 如果某个概念经过讨论，依然难以解释清楚，作者应当考虑直接在代码中添加相关说明。
 
-- If you expect to take a break, consider setting your status to inactive. This helps others know not to approach you for GTNH-related work.
-- Inactive status is not a demotion, you can request to be reactivated after your break.
-- After a month of inactivity, defined as no code contributions or PR reviewing, a developer may be marked as on hiatus.
+---
+
+### 阅读 PR 描述
+
+- PR 描述能帮助审查者快速了解改动的全貌。
+- 如果描述为空或表达含糊，请要求作者补充完善。
+- 良好的描述有助于审查者：
+  - 了解改动的影响范围。
+  - 判断自己是否适合审查该 PR。
+  - 理解该改动的预期目的。
+
+---
+
+### 建设性地参与审查
+
+代码审查意见应当具有建设性、可操作性，并保持尊重。
+
+请牢记：
+
+- 每个 PR 的背后，都是一位为项目投入了时间与精力的贡献者。
+- 粗鲁或敷衍的审查意见可能打击他人今后参与贡献的积极性。
+- 不仅要指出需要改进的地方，也应肯定已经做得好的部分。
+- 如果有不清楚的地方，请以真诚提问的方式提出顾虑，不应在言语中暗含批评。
+- 只有当贡献者感到自己受重视、受尊重时，社区才能蓬勃发展。
+
+---
+
+## 6. 开发者休假与暂离
+
+开发者可能因生活中的各种事务，需要暂时离开 GTNH 项目。
+
+- 如果你预计需要休息一段时间，建议将自己的状态设置为不活跃（Inactive）。这可以让其他人知道，暂时不要因 GTNH 相关工作联系你。
+- 不活跃状态并非降职，休息结束后你可以随时申请恢复活跃状态。
+- 如果开发者连续一个月没有参与代码贡献或 PR 审查，可能会被标记为暂离（On hiatus）状态。

@@ -37,7 +37,7 @@
       <a href="https://github.com/GTNewHorizons/ExampleMod1.7.10/releases/latest">📦 示例模组起始/迁移包</a><br>
       <a href="https://nexus.gtnewhorizons.com/service/rest/repository/browse/public/">🪶 Maven</a><br>
       <a href="https://github.com/GTNewHorizons/.github/blob/master/CODE_OF_CONDUCT_zh_cn.md">📜 贡献者行为准则</a><br>
-      <a href="https://github.com/GTNewHorizons/.github/blob/master/CONTRIBUTING_zh_cn.md">📖 贡献指南</a><br>
+      <a href="https://github.com/GTNewHorizons/.github/blob/master/CONTRIBUTING_zh_cn.md">📖 贡献准则</a><br>
     </td>
   </tr>
 </table>
